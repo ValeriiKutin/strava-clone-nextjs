@@ -1,0 +1,21 @@
+.layoutUploadMenu-box {
+  display: flex;
+  flex-direction: column;
+  width: 120px;
+  height: 96px;
+  border: 1px solid #f0f0f5;
+}
+.layoutUploadMenu-box a {
+  color: #000000;
+  padding: 14px 20px 14px 20px;
+  color: #333;
+  line-height: 1.2em;
+  text-decoration: none;
+}
+
+.layoutUploadMenu-box a:hover {
+  background-color: #f7f7fa;
+}
+.add-orange-line {
+  border-left: 3px solid #fc5200;
+}

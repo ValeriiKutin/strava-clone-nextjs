@@ -1,0 +1,229 @@
+.container {
+  max-width: 1248px;
+  height: 55px;
+  margin: 0 auto;
+  padding: 0 15px 0 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.global-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.025);
+  border-bottom: 1px solid #f0f0f5;
+  background-color: #fff;
+  height: 55px;
+  line-height: 18px;
+  z-index: 50;
+}
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 55px;
+}
+.box-right-nav {
+  display: flex;
+  align-items: center;
+}
+.btn-auth {
+  cursor: pointer;
+  background-color: transparent;
+  color: #fc5200;
+  text-decoration: none;
+  font-weight: 600;
+  height: 36px;
+  border-radius: 5px;
+  border: 1px solid #fc5200;
+  font-size: 15px;
+}
+.user-img {
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+  left: 5px;
+}
+
+.user-img::after {
+  content: "";
+  position: absolute;
+  width: 11px;
+  height: 1px;
+  top: 17px;
+  right: -31px;
+  transform: rotate(-45deg);
+  background-color: gray;
+  z-index: 20;
+}
+.user-img::before {
+  content: "";
+  position: absolute;
+  width: 11px;
+  height: 1px;
+  top: 17px;
+  right: -23px;
+  transform: rotate(45deg);
+  background-color: gray;
+  z-index: 20;
+}
+
+.box-img:hover .menu-profile {
+  display: block;
+}
+
+.menu-profile {
+  position: absolute;
+  top: 45px;
+  left: -61px;
+  display: none;
+  background-color: white;
+  z-index: 100;
+  /* padding-top: 10px; */
+  /* padding-bottom: 10px; */
+  width: 140px;
+  height: 80px;
+  border: 1px solid #f0f0f5;
+  border-top: 0;
+  cursor: auto;
+}
+.box-img:hover .menu-profile {
+  display: block;
+}
+.box-img:hover {
+  border-left: 1px solid #f0f0f5;
+  border-right: 1px solid #f0f0f5;
+  border-bottom: 1px solid #ffffff;
+}
+.box-img {
+  width: 85px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  left: 6px;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+}
+.button-add-activity {
+  cursor: pointer;
+  position: relative;
+  background: transparent;
+  height: 26px;
+  width: 26px;
+  border: 2px solid #fc5200;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+.button-add-activity::after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 2px;
+  top: 10px;
+  left: 5px;
+  background-color: #fc5200;
+}
+.button-add-activity::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 12px;
+  top: 5px;
+  left: 10px;
+  background-color: #fc5200;
+}
+.box-add-activity:hover .button-add-activity {
+  background-color: #fc5200;
+}
+.box-add-activity:hover .button-add-activity::after,
+.box-add-activity:hover .button-add-activity::before {
+  background-color: #ffffff;
+}
+.menu-ul {
+  padding: 0;
+  position: relative;
+}
+.menu-ul .menu-profile-li {
+  padding-left: 15px;
+  padding-top: 10px;
+  cursor: pointer;
+  list-style: none;
+  font-size: 15px;
+  text-align: left;
+  height: 40px;
+}
+.menu-ul .menu-add-li .upload-activity-icon {
+  cursor: pointer;
+  list-style: none;
+  font-size: 15px;
+  text-align: left;
+  height: 40px;
+}
+/* .menu-ul li:not(:last-child) {
+  margin-bottom: 20px;
+} */
+.btn-auth-menu {
+  background: transparent;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+}
+.button-add-activity {
+  position: relative;
+}
+.menu-add-activity {
+  position: absolute;
+  top: 39px;
+  left: -100px;
+  display: none;
+  background-color: white;
+  z-index: 100;
+  width: 140px;
+  height: 80px;
+  border: 1px solid #f0f0f5;
+  border-top: 0;
+  cursor: auto;
+}
+.box-add-activity:hover .menu-add-activity {
+  display: block;
+}
+.box-add-activity {
+  width: 57px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+}
+.box-add-activity:hover {
+  border-left: 1px solid #f0f0f5;
+  border-right: 1px solid #f0f0f5;
+  border-bottom: 1px solid #ffffff;
+}
+.upload-activity-icon {
+  display: flex;
+  align-items: center;
+  padding-left: 7px;
+  padding-top: 1px;
+  text-decoration: none;
+  color: #000000;
+}
+.GrUploadOption {
+  font-size: 20px;
+  margin-right: 5px;
+}
+.menu-ul .menu-profile-li:hover,
+.menu-ul .menu-add-li:hover {
+  background-color: #f0f0f5;
+}
+
+.menu-ul .menu-profile-li,
+.menu-ul .menu-add-li {
+  list-style: none;
+}
