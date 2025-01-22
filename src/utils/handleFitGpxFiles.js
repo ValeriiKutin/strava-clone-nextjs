@@ -38,3 +38,21 @@ export const parseGPX = (file, setError, setDataFile) => {
     };
     reader.readAsText(file);
 };
+
+export const parseTCX = (file, setError, setDataFile) => {
+    const reader = new FileReader();
+    reader.onload = (e) => {
+        const tcxContent = e.target.result;
+        parseString(tcxContent, (err, result) => {
+            if (err) {
+                setError("Error parsing TCX file.");
+                console.error(err);
+            } else {
+                setDataFile(result);
+                setError(null);
+                console.log("Parsed TCX data:", result);
+            }
+        });
+    };
+    reader.readAsText(file);
+};

@@ -8,17 +8,16 @@ import { getFirestore } from "firebase/firestore";
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-    apiKey: process.env.NEXT_PUBLIC_FIRESTORE_API,
-    authDomain: "strava-clone-nextjs.firebaseapp.com",
-    projectId: "strava-clone-nextjs",
-    storageBucket: "strava-clone-nextjs.firebasestorage.app",
-    messagingSenderId: "918032089221",
-    appId: "1:918032089221:web:2c3fee889e73d659a429ec",
-    measurementId: "G-D4ZKZDZ78W"
+  apiKey: process.env.NEXT_PUBLIC_FIRESTORE_API,
+  authDomain: "prac-crud-with-bd.firebaseapp.com",
+  projectId: "prac-crud-with-bd",
+  storageBucket: "prac-crud-with-bd.appspot.com",
+  messagingSenderId: "932131948988",
+  appId: "1:932131948988:web:d583fe2431596ad06e43b9"
 };
 
 // Initialize Firebase
-const app = initializeApp(firebaseConfig);
+export const app = initializeApp(firebaseConfig);
 
 export const auth = getAuth(app);
 

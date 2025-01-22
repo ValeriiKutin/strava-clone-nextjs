@@ -1,9 +1,14 @@
+.layoutUploadMenu-fix {
+  position: fixed;
+  top: 85px;
+}
 .layoutUploadMenu-box {
   display: flex;
   flex-direction: column;
   width: 120px;
   height: 96px;
   border: 1px solid #f0f0f5;
+  /* margin-top: 266px; */
 }
 .layoutUploadMenu-box a {
   color: #000000;

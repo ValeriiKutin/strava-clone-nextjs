@@ -1,3 +1,5 @@
 .layoutBox {
   display: flex;
+  /* margin-top: 1022px; */
+  padding-bottom: 60px;
 }

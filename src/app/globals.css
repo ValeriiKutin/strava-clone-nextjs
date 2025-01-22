@@ -13,8 +13,9 @@ body {
   line-height: 1.5;
   /* 4. Improve text rendering */
   -webkit-font-smoothing: antialiased;
-  padding-top: 108px;
+  /* padding-top: 105px; */
   padding-left: 17px;
+  background-color: #fafafa;
 }
 /* 5. Improve media defaults */
 img,

@@ -1,0 +1,38 @@
+.settings-left-menu {
+    position: fixed;
+    background-color: #fff;
+    min-height: 18%;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #dfdfe8;
+    top: 80px;
+}
+
+.settings-left-menu .settings-link {
+    color: #000;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 10px 10px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.settings-left-menu .settings-link:hover {
+    background-color: #ececee;
+}
+
+.add-orange-bg {
+    background-color: #fc5200;
+    color: #fff !important;
+}
+
+.settings-left-menu .settings-link.add-orange-bg:hover {
+    background-color: #fc5200;
+
+}
+
+.margin-settings {
+    margin-left: 230px;
+}
